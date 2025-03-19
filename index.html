@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onegai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <div class="header animatable bounceIn" data-section-name="header">
+        <div class="header_elements">
+            <p class="header_name">Onegai My Melody</p>
+            <div class="elements_right">
+                <p onClick="move('melody')">My Melody</p>
+                <p onClick="move('kuromi')">Kuromi</p>
+                <p onClick="move('baku')">Baku</p>
+            </div>
+        </div>
+    </div>
+    <section class="panel home" data-section-name="melody" id="melody">
+        <h1 class="panel_h1">My Melody</h1>
+        <div class="panel_inner">
+            <div class="inner_top animatable fadeInUp">
+                <div class="img_wrap">
+                    <img src="images/image%201.png">
+                </div>
+                <div class="right_text">
+                    <p>My Melody, по прозвищу My Melo (マイメロMai Mero), является титулованной главной героиней серии Onegai My Melody. Она милая маленькая девочка-зайчик из Мэриленда. Ее лучшие друзья - Флэт и Пиано. Ее любимая еда - миндальные фунтовые кексы, которые она любит печь со своей мамой.</p>
+                </div>
+            </div>
+            <div class="bottom_text animatable bounceInRight">
+                <p>Обладая исключительными кулинарными и пекарскими способностями, My Melody - та, кто готовит еду для Уты и ее семьи. Она является партнером и лучшей подругой человеческой девушки, Уты Юмено.</p>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel1" data-section-name="kuromi" id="kuromi">
+        <h1 class="panel_h1 black">Kuromi</h1>
+        <div class="panel_inner">
+            <div class="inner_top">
+                <div class="img_wrap animatable moveUp">
+                    <img src="images/image%202.png">
+                </div>
+                <div class="right_text black kelly animatable bounceIn">
+                    <p>Куроми(クロミKuromi) — главный антагонист в серии. Она — самопровозглашённый соперник или «заклятый враг» Моей Мелодии. После побега из тюрьмы Мэриленда и кражи Ключа Мелодии, магического артефакта, наделённого силой, разрушающей сон, Куроми начинает свой квест по сбору 100 чёрных нот, чтобы воскресить Дух Тёмной Силы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel2" data-section-name="baku" id="baku">
+        <h1 class="panel_h1">Baku</h1>
+        <div class="panel_inner">
+            <div class="inner_top">
+                <div class="img_wrap animatable fadeInDown">
+                    <img src="images/image%203.png">
+                </div>
+                <div class="right_text start animatable fadeIn">
+                    <p>Баку(バクBaku) — второстепенный антагонист оригинальной Onegai My Melody и её сиквелов. Он — фиолетовый тапир (которого люди часто принимают за баклажан), который</p>
+                </div>
+            </div>
+            <div class="bottom_text start animatable bounceInLeft">
+                <p>служит помощником/приспешником Куроми. Он имеет тенденцию заканчивать свои предложения «~zona».</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer animatable fadeInDown" data-section-name="footer">
+        <p>2025 ©. Все права защищены.</p>
+    </div>
+</body>
+<script src="https://lukehaas.me/projects/scrollify/assets/js/jquery-2.2.1.min.js"></script>
+<script src="https://lukehaas.me/projects/scrollify/assets/js/jquery.scrollify.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/script.js"></script>
+</html>

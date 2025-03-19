@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Kelly Slab";
+    font-style: normal;
+    src: url("fonts/KellySlab-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Press Start 2P";
+    font-style: normal;
+    src: url("fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background: #B25C82;
+    height: 200px;
+}
+
+.header_elements {
+    height: 100%;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_name {
+    color: #fff;
+    font-family: Impact, sans-serif;
+    font-size: clamp(26px, 5vw, 96px);
+}
+
+.elements_right {
+    display: flex;
+    gap: 78px;
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(16px, 2.5vw, 48px);
+}
+
+.elements_right p {
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.elements_right p::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3%;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #fff;
+    transition: .3s ease;
+}
+
+.elements_right p:hover::after {
+    width: 100%;
+}
+
+.panel {
+    color: #fff;
+}
+
+.panel_h1 {
+    font-size: clamp(26px, 5vw, 96px);
+    font-family: Impact, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.panel_inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 1692px;
+}
+
+.inner_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.right_text, .bottom_text {
+    font-size: clamp(16px, 2.5vw, 48px);
+    font-family: Montserrat, sans-serif;
+    text-align: justify;
+}
+
+.right_text {
+    width: 792px;
+}
+
+.bottom_text {
+    width: 100%;
+}
+
+.home {
+    background: #FE718C;
+}
+
+.panel1 {
+    background: #F4B4D0;
+}
+
+.black {
+    color: black;
+}
+
+.kelly {
+    font-family: Kelly Slab, sans-serif;
+    line-height: 135%;
+    letter-spacing: 1px;
+}
+
+.panel2 {
+    background: #746487;
+}
+
+.start {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.footer {
+    background: #B25C82;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(16px, 2.5vw, 48px);
+    font-family: Montserrat, sans-serif;
+    height: 130px;
+}
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 4px;
+}
+
+.pagination a.active:after {
+    box-shadow: inset 0 0 0 10px;
+}
+
+.pagination a .hover-text {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-family: Montserrat, sans-serif;
+    opacity: 0;
+    transition: opacity .5s ease;
+    padding-right: 15px;
+}
+
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+
+.pagination a:after {
+    transition: box-shadow .5s ease;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 4px;
+    bottom: 0;
+}
