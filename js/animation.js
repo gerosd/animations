@@ -11,7 +11,7 @@ jQuery(function($) {
 
         $animatables.each(function(i) {
             var $animatable = $(this);
-            if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+            if (($animatable.offset().top + $animatable.height() - 100) < offset) {
                 $animatable.removeClass('animatable').addClass('animated');
             }
         });
