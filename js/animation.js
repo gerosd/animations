@@ -5,7 +5,7 @@ jQuery(function($) {
         var offset = $(window).scrollTop() + $(window).height(),
             $animatables = $('.animatable');
 
-        if ($animatables.length == 0) {
+        if ($animatables.length === 0) {
             $(window).off('scroll', doAnimations);
         }
 
